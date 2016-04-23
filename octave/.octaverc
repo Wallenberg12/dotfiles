@@ -1,0 +1,7 @@
+format long g
+
+if (isguirunning)
+	graphical_toolkit qt
+else
+	graphical_toolkit fltk
+endif
