@@ -14,6 +14,9 @@ source ~/.bash-git-prompt/gitprompt.sh
 alias gs="git status"
 alias gl="git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
 
+alias newpubkey='ssh-keygen -f ~/.ssh/id_rsa -y'
+alias fingerprint='ssh-keygen -lf ~/.ssh/id_rsa.pub'
+
 ## lazy
 alias mp3="mplayer *.mp3"
 alias n="nano"
@@ -43,9 +46,6 @@ alias matlab="/home/markus/MATLAB/bin/matlab"
 alias m="/home/markus/MATLAB/bin/matlab -nodesktop -nosplash"
 alias o="octave-cli"
 
-## lua
-#export LUA_PATH='/home/markus/.luarocks/share/lua/5.1/?.lua;/home/markus/.luarocks/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;./?.lua;/usr/lib/lua/5.1/?.lua;/usr/lib/lua/5.1/?/init.lua'
-#export LUA_CPATH='/home/markus/.luarocks/lib/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;./?.so;/usr/lib/lua/5.1/loadall.so'
 
 ## local compiles
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.mlocal/lib"
