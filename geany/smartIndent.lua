@@ -1,5 +1,6 @@
 --[[
 Smart Indent for bash scripts in geany using lua plugin
+https://github.com/markuman/dotfiles/
 ]]--
 
 -- Current content
