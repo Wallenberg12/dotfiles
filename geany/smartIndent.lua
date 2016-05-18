@@ -48,10 +48,7 @@ for line in string.gmatch(content, "([^\n]+)") do
 	if (isMember (line, decrease_words)) then
 		rep = rep - 1
 	end
-	
-	-- minimum repeats of tab is 0
-	rep = math.max (rep, 0)
-	
+
 	-- indent current line
 	if (isMember (line, neutral_words)) then
 		this:insert (TAB:rep (rep - 1) .. line .. "\n")
