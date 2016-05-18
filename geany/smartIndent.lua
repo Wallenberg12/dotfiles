@@ -35,8 +35,8 @@ setmetatable (this, {__index = table})
 -- settings
 TAB = "\t"
 rep = 0
-increase_words = {"for", "while", "if"}
-decrease_words = {"done", "fi"}
+increase_words = {"for", "while", "if", "function", "{", "case"}
+decrease_words = {"done", "fi", "}", "esac"}
 neutral_words  = {"el", "elif", "then"}
 
 -- split content into table by new linr
