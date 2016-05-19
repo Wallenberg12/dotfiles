@@ -65,5 +65,7 @@ for n in geany.lines() do
 	end
 end 
 
+-- remove last new line
+this:remove()
 -- update content
 geany.text (this:concat ())
