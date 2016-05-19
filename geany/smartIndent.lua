@@ -33,9 +33,9 @@ setmetatable (this, {__index = table})
 -- settings
 TAB = "\t"
 rep = 0
-increase_words = {"for", "while", "if", "function", "{", "case"}
+increase_words = {"for", "while", "if", "function", "{", "case", "until", "select"}
 decrease_words = {"done", "fi", "}", "esac"}
-neutral_words  = {"el", "else", "elif", "then", "do"}
+neutral_words  = {"else", "elif", "then", "do"}
 
 local line = ""
 
