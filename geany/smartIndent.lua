@@ -49,13 +49,15 @@ for n in geany.lines() do
 	end
 
 	-- indent current line
-	if (#line == 0) then
-		this:insert ("\n")
-	elseif (isMember (line, neutral_words)) then
-		this:insert (TAB:rep (rep - 1) .. line .. "\n")
-	else
-		this:insert (TAB:rep (rep) .. line .. "\n")
+	if (#line > 0) then		
+		if (isMember (line, neutral_words)) then
+			this:insert (TAB:rep (rep - 1))
+		else
+			this:insert (TAB:rep (rep))
+		end
 	end
+	this:insert (line)
+	this:insert ("\n")
 	
 	-- last increase
 	if (isMember (line, increase_words)) then
