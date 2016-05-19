@@ -3,13 +3,6 @@ Smart Indent for bash scripts in geany using lua plugin
 https://github.com/markuman/dotfiles/
 ]]--
 
--- Current content
-local content = geany.text ()
-if (content == nil) then
-	return
-end
-
-
 --[[
 -- some string help functions
 --]]
@@ -28,6 +21,10 @@ function isMember (str, list)
 	return false
 end
 
+-- Check content
+valid_shebang  = {"#!/bin/sh", "#!/bin/bash"}
+if (geany.text () == nil) then return end
+if not (isMember (geany.lines (1), valid_shebang)) then return end
 
 -- Object of reformatted content
 local this = {}
@@ -40,10 +37,12 @@ increase_words = {"for", "while", "if", "function", "{", "case"}
 decrease_words = {"done", "fi", "}", "esac"}
 neutral_words  = {"el", "elif", "then"}
 
--- split content into table by new linr
-for line in string.gmatch(content, "([^\n]+)") do
-	line = line:trim ()
-	
+local line = ""
+
+-- split content into table by new line
+for n in geany.lines() do
+	line = geany.lines(n):trim()
+
 	-- first decrease
 	if (isMember (line, decrease_words)) then
 		rep = rep - 1
