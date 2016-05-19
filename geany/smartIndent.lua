@@ -35,7 +35,7 @@ TAB = "\t"
 rep = 0
 increase_words = {"for", "while", "if", "function", "{", "case"}
 decrease_words = {"done", "fi", "}", "esac"}
-neutral_words  = {"el", "elif", "then"}
+neutral_words  = {"el", "elif", "then", "do"}
 
 local line = ""
 
