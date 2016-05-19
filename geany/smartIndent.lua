@@ -50,7 +50,9 @@ for line in string.gmatch(content, "([^\n]+)") do
 	end
 
 	-- indent current line
-	if (isMember (line, neutral_words)) then
+	if (#line == 0) then
+		this:insert ("\n")
+	elseif (isMember (line, neutral_words)) then
 		this:insert (TAB:rep (rep - 1) .. line .. "\n")
 	else
 		this:insert (TAB:rep (rep) .. line .. "\n")
