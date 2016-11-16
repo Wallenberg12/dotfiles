@@ -48,15 +48,15 @@ alias o="octave-cli"
 
 ## local compiles
 #################
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.mlocal/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.$(whoami)/lib"
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.mlocal/bin" ] ; then
-	export PATH="$HOME/.mlocal/bin:$HOME/.mlocal/usr/bin:$HOME/.mlocal/usr/local/bin:$PATH"
+if [ -d "$HOME/.$(whoami)/bin" ] ; then
+	export PATH="$HOME/.$(whoami)/bin:$HOME/.$(whoami)/usr/bin:$HOME/.$(whoami)/usr/local/bin:$PATH"
 fi
  
-if [ -d "$HOME/.mlocal/lib/pkgconfig" ]; then
-	export PKG_CONFIG_PATH="$HOME/.mlocal/lib/pkgconfig"
+if [ -d "$HOME/.$(whoami)/lib/pkgconfig" ]; then
+	export PKG_CONFIG_PATH="$HOME/.$(whoami)/lib/pkgconfig"
 fi
 
 if [ $(uname) = "NetBSD" ]; then
