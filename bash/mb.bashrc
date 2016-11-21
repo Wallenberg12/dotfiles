@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 
+export PREFIX=$HOME/.$(whoami)/
 ## git
 ######
 #source ~/.bash-git-prompt/gitprompt.sh
@@ -38,6 +39,8 @@ function lua_environment () {
 	fi
 }
 alias uselua="lua_environment"
+
+export LUA_CPATH=$HOME/.$(whoami)/lib/lua/5.3/?.so
 
 ## matlab/octave
 ################
