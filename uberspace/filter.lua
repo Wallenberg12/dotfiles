@@ -41,5 +41,5 @@ if (DESTINATION) then
 	print("currently not implemented in lua-maildir")
 end
 
-maildir:add (table.concat (THIS_MAIL))
+maildir:add (table.concat (THIS_MAIL, "\n"))
 print(tool.process_information()["memory_peak"])
