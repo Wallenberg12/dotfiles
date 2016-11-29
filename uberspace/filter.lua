@@ -38,7 +38,7 @@ end
 local maildir = md.new (MAILDIR)
 
 if (DESTINATION) then
-	print("currently not implemented in lua-maildir")
+	maildir = maildir:get_folder (DESTINATION)
 end
 
 maildir:add (table.concat (THIS_MAIL, "\n"))
