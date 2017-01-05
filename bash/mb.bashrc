@@ -8,6 +8,7 @@ export PREFIX=$HOME/.$(whoami)/
 #source ~/.bash-git-prompt/gitprompt.sh
 alias gs="git status"
 alias gl="git log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gp="git pull"
 
 ## ssh keygen
 #############
