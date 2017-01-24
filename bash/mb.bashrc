@@ -67,3 +67,10 @@ if [ $(uname) = "NetBSD" ]; then
 	PKG_PATH="http://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/x86_64/7.0/All/"
 	export PKG_PATH
 fi
+
+### autojump
+# https://github.com/wting/autojump
+if [ -f "/usr/share/autojump/autojump.bash" ]; then
+	source /usr/share/autojump/autojump.bash
+fi
+
