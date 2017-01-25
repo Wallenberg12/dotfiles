@@ -21,10 +21,9 @@ alias mp3="mplayer *.mp3"
 alias n="nano"
 alias nani="nano"
 
-function search_in_bash_history () {
+function h () {
 	grep "$1" ~/.bash_history
 }
-alias h="search_in_bash_history"
 
 ## lua
 ######
@@ -74,3 +73,8 @@ if [ -f "/usr/share/autojump/autojump.bash" ]; then
 	source /usr/share/autojump/autojump.bash
 fi
 
+## wttr.in
+function wttr () {
+        curl wttr.in/"$1"
+}
+alias wetter="wttr"
