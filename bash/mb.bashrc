@@ -78,3 +78,7 @@ function wttr () {
         curl wttr.in/"$1"
 }
 alias wetter="wttr"
+
+# gnumeric with english numeric notation
+alias gnumeric='LC_NUMERIC="en" gnumeric'
+
