@@ -20,6 +20,7 @@ alias fingerprint='ssh-keygen -lf ~/.ssh/id_rsa.pub'
 alias mp3="mplayer *.mp3"
 alias n="nano"
 alias nani="nano"
+alias zram="modprobe zram && echo $((3072*1024*1024)) > /sys/block/zram0/disksize && mkswap /dev/zram0 && swapon -p 60 /dev/zram0"
 
 function h () {
 	grep "$1" ~/.bash_history
