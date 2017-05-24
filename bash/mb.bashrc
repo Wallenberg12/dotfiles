@@ -22,6 +22,9 @@ alias n="nano"
 alias nani="nano"
 alias zram="modprobe zram && echo $((3072*1024*1024)) > /sys/block/zram0/disksize && mkswap /dev/zram0 && swapon -p 60 /dev/zram0"
 
+# mplayer vaapi
+alias m="mplayer -vo vaapi -va vaapi"
+
 function h () {
 	grep "$1" ~/.bash_history
 }
@@ -45,8 +48,8 @@ export LUA_CPATH=$HOME/.$(whoami)/lib/lua/5.3/?.so
 
 ## matlab/octave
 ################
-alias matlab="/home/markus/MATLAB/bin/matlab"
-alias m="/home/markus/MATLAB/bin/matlab -nodesktop -nosplash"
+# alias matlab="/home/markus/MATLAB/bin/matlab"
+# alias m="/home/markus/MATLAB/bin/matlab -nodesktop -nosplash"
 alias o="octave-cli"
 
 
