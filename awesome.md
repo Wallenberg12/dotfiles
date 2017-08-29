@@ -23,3 +23,9 @@
 * [axel](https://github.com/axel-download-accelerator/axel) light and fast command line download accelerator
 * [autojump](https://github.com/wting/autojump) a `cd` command that leans
 * [tilix](https://gnunn1.github.io/tilix-web/) GTK tiling terminal emulator
+
+
+
+# No FOSS :(
+
+* [typora](https://typora.io/) minimal md editor
