@@ -24,9 +24,10 @@
 * [autojump](https://github.com/wting/autojump) a `cd` command that leans
 * [tilix](https://gnunn1.github.io/tilix-web/) GTK tiling terminal emulator
 * [koala](https://github.com/oklai/koala/) GUI application for Less, Sass, Compass and CoffeeScript compilation
-
+* [peek](https://github.com/phw/peek) screen capture
 
 
 # No FOSS :(
 
 * [typora](https://typora.io/) minimal md editor
+
