@@ -1,5 +1,10 @@
 #!/bin/bash
 # git autocommit and push
+# 
+# use git caching or ssh key auth
+# git config --global credential.helper cache
+# git config --global credential.helper 'cache --timeout=3600'
+
 
 if test "$#" -ne 1; then
     echo "Target dir is required!"
@@ -27,5 +32,5 @@ if git -C $TARGETDIR rev-parse; then
 	}
 	export -f scan_and_commit
 
-	watch -n 5 scan_and_commit
+	watch -n 10 scan_and_commit
 fi
