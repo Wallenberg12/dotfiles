@@ -7,6 +7,7 @@
 
 * [Geany](https://www.geany.org/) - GTK Editor and lua-scriptable
 * [nano](https://www.nano-editor.org/) 
+* [vs code](https://github.com/Microsoft/vscode) - vs code (even when it's microsoft, it is an awseome oss editor)
 
 # Graphics
 
