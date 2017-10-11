@@ -86,3 +86,5 @@ alias wetter="wttr"
 # gnumeric with english numeric notation
 alias gnumeric='LC_NUMERIC="en" gnumeric'
 
+# local webserver
+alias ws="python -m http.server 8000"
