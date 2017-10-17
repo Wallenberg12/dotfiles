@@ -59,4 +59,10 @@ drop all incomming ssh connections
 
     iptables -A INPUT -i eth0 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j DROP
 
-    
+
+## docker
+
+Delete all containers
+  * `docker rm $(docker ps -a -q)`
+Delete all images
+  * `docker rmi $(docker images -q)`
