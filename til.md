@@ -76,3 +76,7 @@ Set git to use the credential memory cache
 Set the cache to timeout after 1 hour (setting is in seconds)
 
     git config --global credential.helper 'cache --timeout=3600'
+
+Set default editor
+
+    git config --global core.editor "vim"
